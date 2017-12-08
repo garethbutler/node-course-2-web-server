@@ -28,9 +28,9 @@ app.use((req, res, next) => {
   next(); // tell express we are done
 });
 
-app.use((req, res, next) => {
-  res.render('maintenence');
-});
+// app.use((req, res, next) => {
+//   res.render('maintenence');
+// });
 
 app.use(express.static(__dirname + '/public'));  // serve static pages (absolute path)
 
